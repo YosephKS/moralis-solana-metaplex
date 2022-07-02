@@ -3,7 +3,7 @@
     <img alt="Metaplex" src="app/src/assets/moralis_logo.jpeg" style="background: black; padding: 10px" width="250" />
   </a>
 </p>
-<p>
+<p align="center">
   <a href="https://metaplex.com">
     <img alt="Metaplex" src="js/packages/web/public/metaplex-logo.svg" style="background: black; padding: 10px" width="250" />
   </a>
