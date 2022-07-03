@@ -18,18 +18,16 @@ const SolanaNFTCard = (props) => {
     }
   );
 
-  //   useEffect(() => {
-  //     if (chain && nftAddress && !data && !isLoading) {
-  //       fetch();
-  //     }
-  //   }, [chain, data, fetch, isLoading, nftAddress]);
-
-  useEffect(() => {
+  const fetchMetadata = () => {
     if (data) {
       fetch(data?.metaplex?.metadataUri)
         .then((response) => response.json())
         .then((result) => setMetadata(result));
     }
+  };
+
+  useEffect(() => {
+    fetchMetadata();
   });
 
   return (

@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { MoralisProvider } from "react-moralis";
-import { NotificationProvider } from "web3uikit";
 import "antd/dist/antd.css";
 
 const container = document.getElementById("root");
@@ -15,9 +14,7 @@ root.render(
       appId={process.env.REACT_APP_MORALIS_APP_ID}
       serverUrl={process.env.REACT_APP_MORALIS_DAPP_URL}
     >
-      <NotificationProvider>
-        <App />
-      </NotificationProvider>
+      <App />
     </MoralisProvider>
   </React.StrictMode>
 );

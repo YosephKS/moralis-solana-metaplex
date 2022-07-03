@@ -35,7 +35,7 @@ const App = () => {
   } = useMoralis();
 
   const { data } = useMoralisSolanaCall(
-    SolanaApi.account.getNFTs,
+    SolanaApi?.account?.getNFTs,
     {
       network: chain,
       address: user?.get("solAddress"),
